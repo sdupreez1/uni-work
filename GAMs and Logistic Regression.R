@@ -108,6 +108,7 @@ gpred = predict(glm.fit, type = 'response')
 
 admit.pred = round(gpred) 
   # if model predicted a value >=0.5 then we take that to mean it predicts admittance  
+  # can take value predicted as 'probability' of acceptance, i.e >=0.5 means more likely to accept than not
 
 errortable = table(admit.pred - admit$admit)
   # shows number of correct predictions (284) and missed predictions (116 =97+19)
