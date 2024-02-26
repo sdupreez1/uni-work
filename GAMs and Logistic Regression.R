@@ -112,5 +112,5 @@ admit.pred = round(gpred)
 
 errortable = table(admit.pred - admit$admit)
   # shows number of correct predictions (284) and missed predictions (116 =97+19)
-  # hence model has an error rate of 116/400 = 29% in this case
+  # hence model has an error rate of 116/400 = 29% for these data
 
