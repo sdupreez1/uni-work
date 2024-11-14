@@ -6,16 +6,6 @@ import numpy as np
 def f_r(r, x):      # logistic map
     return r*x*(1-x)
 
-
-def dfdx(f, x): # find derivative of f
-    if type(x) == 'numpy.complex128':
-        h = complex(0.001, 0.001)
-        return (f(x + h) - f(x))/h
-    else:
-        h = 0.001
-        return (f(x + h) - f(x)) / h
-
-
 def fn(f, n, x):        # iterate f on itself n times
     if n == 0:
         return x
@@ -26,7 +16,7 @@ def quadplot():
     r_init = 4
     x = np.linspace(0, 1, 1000)
 
-    fig, ax = plt.subplots()    # what do the commas do???????????
+    fig, ax = plt.subplots() 
     parabola, = plt.plot(x, f_r(r_init, x))
     plt.plot(x, x, color='red')
 
