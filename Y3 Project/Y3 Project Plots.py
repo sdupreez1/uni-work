@@ -6,12 +6,6 @@ import numpy as np
 def f_r(r, x):      # logistic map
     return r*x*(1-x)
 
-def fn(f, n, x):        # iterate f on itself n times
-    if n == 0:
-        return x
-    else:
-        return fn(f, n-1, f(x))
-
 def quadplot():
     r_init = 4
     x = np.linspace(0, 1, 1000)
@@ -100,4 +94,5 @@ julia(f_c, -1.3, 50, [-2, 2], [-2, 2], 1000)
 
 
 mandelbrot(50, [-2.5, 1], [-2, 2], 1000)
+
 
