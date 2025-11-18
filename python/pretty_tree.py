@@ -5,7 +5,7 @@ import argparse
 # Get tree string as argument from CLI
 parser = argparse.ArgumentParser()
 parser.add_argument('tree', type=str, 
-                    help='a tree of the format eg (AB(CDE(FG)(HI))JK), where B is a child of A, C is a sibling of B, and D is a child of C')
+                    help='a tree formatted using the same rules as "(AB(CDE(FG)(HI))JK)", where B is a child of A, C is a sibling of B, D is a child of C, and F and H are siblings')
 args = parser.parse_args()
 
 treeStr = args.tree
