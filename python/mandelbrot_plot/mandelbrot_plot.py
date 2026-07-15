@@ -7,6 +7,7 @@ def f_r(r, x):      # logistic map
     return r*x*(1-x)
 
 def quadplot():
+    plt.ion() # enables interactive plots until plt.ioff() is called
     r_init = 4
     x = np.linspace(0, 1, 1000)
 
@@ -32,6 +33,7 @@ def quadplot():
     r_slider.on_changed(update)
 
     plt.show()
+    plt.ioff() # new plots will not be made interactive until plt.ion() is called
 
 def f_c(z, c):
     return z**2 + c
@@ -89,6 +91,7 @@ def mandelbrot(n,   # number of iterations to check if f^i is bounded for i < n
     plt.axis('off')
     plt.show()
 
+quadplot()
 
 julia(f_c, -1.3, 50, [-2, 2], [-2, 2], 1000)
 
