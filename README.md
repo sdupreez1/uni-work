@@ -1,2 +1,2 @@
 # uni-work
-Scripts from my MSc module Advanced Computational Methods (Python), BSc modules Data Science and Statistical Computing (R), Machine Learning and Neural Networks (R), and my Research Project on Fractals in Discrete Dynamical Systems (Python).
+A short formatting script from my MSc module Advanced Computational Methods and my a script producing images of Julia sets and the Mandelbrot set from my BSc research project on Fractals in Discrete Dynamical Systems.
